@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     description='A sample test package',
     author="ocartier",
-    author_email="ocartier@42.fr",
+    author_email="mgendrot@42.fr",
     packages=find_packages(),
-    liscence='MIT'
+    License='MIT'
 )

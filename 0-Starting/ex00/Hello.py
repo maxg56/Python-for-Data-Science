@@ -5,9 +5,9 @@ ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello": "titi!"}
 
 # Updating values
-ft_list[1] = "World"
-ft_tuple = (ft_tuple[0], "France")
-ft_set = {"Hello", "Paris"}
+ft_list[1] = "World!"
+ft_tuple = (ft_tuple[0], "France!")
+ft_set = {"Hello", "Paris!"}
 ft_dict["Hello"] = "42Paris"
 
 # Output
