@@ -54,4 +54,4 @@ def ft_grey(array: np.ndarray) -> np.ndarray:
         0.587 * array[:, :, 1] +
         0.114 * array[:, :, 2]
     ).astype(np.uint8)
-    return grey 
+    return grey

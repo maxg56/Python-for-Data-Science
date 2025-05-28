@@ -25,7 +25,7 @@ def main():
     print('The shape of image is', image.shape)
     print(image)
 
-    image = trim(image, 450, 100, 400, 400 ,1)
+    image = trim(image, 450, 100, 400, 400, 1)
 
     print(f'New shape after slicing: {image.shape}', end='')
     print(f' or ({image.shape[0]}, {image.shape[1]})')

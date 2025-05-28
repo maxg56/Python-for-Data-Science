@@ -13,7 +13,7 @@ def main():
     The graph includes a title, axis labels, legend, and grid.
     """
     try:
-        dataset =load("life_expectancy_years.csv")
+        dataset = load("life_expectancy_years.csv")
     except ValueError as e:
         print("Error:", e)
     germany_data = dataset[dataset['country'] == 'France']

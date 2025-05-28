@@ -29,7 +29,7 @@ def main():
     the population comparison of three countries.
     """
     try:
-        data =load("population_total.csv")
+        data = load("population_total.csv")
     except ValueError as e:
         print("Error:", e)
     campus = "Germany"

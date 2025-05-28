@@ -1,16 +1,15 @@
 import pandas as pd
 import os
 
+
 def load(file_path: str) -> pd.DataFrame:
     """
     Load a CSV file from the given path and return it as a pandas DataFrame.
-
     Args:
         file_path (str): The path to the CSV file.
 
     Returns:
         pd.DataFrame: The data from the CSV file as a DataFrame.
-    
     Raises:
         ValueError: If the file cannot be loaded or does not exist.
 

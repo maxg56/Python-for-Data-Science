@@ -16,8 +16,18 @@ MORSE_CODE_DICT = {
     '0': '-----', ' ': '/'
 }
 
+
 def text_to_nested_morse(text: str) -> str:
-    """Encode du texte en Morse, retourne une chaîne Morse avec espaces entre lettres et slash entre mots."""
+    """
+    Encode du texte en Morse, retourne une chaîne Morse avec espaces
+      entre lettres et slash entre mots.
+    Args:
+        text (str): Le texte à encoder.
+    Returns:
+        str: Le texte encodé en Morse.
+    Raises:
+        ValueError: Si le texte contient des caractères non valides.
+    """
     text = text.upper()
     if not all(char in MORSE_CODE_DICT for char in text):
         raise ValueError("AssertionError: the arguments are bad")
@@ -26,7 +36,17 @@ def text_to_nested_morse(text: str) -> str:
         for word in text.split()
     )
 
+
 def main():
+    """
+    Main function to handle input and call the Morse code conversion function.
+    It expects one command line argument:
+    1. A string to convert to Morse code.
+    If the argument is not provided or is invalid, it raises an AssertionError.
+    Raises:
+        AssertionError: If the number of arguments is not exactly one.
+        ValueError: If the input text contains invalid characters.
+    """
     if len(sys.argv) != 2:
         print("AssertionError: the arguments are bad")
         return
@@ -36,6 +56,7 @@ def main():
         print(morse_code)
     except ValueError as e:
         print(e)
+
 
 if __name__ == "__main__":
     main()

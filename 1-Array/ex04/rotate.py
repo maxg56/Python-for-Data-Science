@@ -23,7 +23,6 @@ def rotate(array):
         raise ValueError("Unsupported array dimension")
 
 
-
 def main():
     """
         Open the image, trim it, rotate it and convert it to grayscale,
@@ -47,7 +46,6 @@ def main():
     except Exception as e:
         print(e)
         exit()
-    
     print(f'New shape after Transpose: ({image.shape[0]}, {image.shape[1]})')
     print(image)
 

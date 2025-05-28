@@ -5,6 +5,7 @@ YEAR_COLUMN = '1900'
 NAN_CSV_PIB = "income_per_person_gdppercapita_ppp_inflation_adjusted.csv"
 NAN_CSV_LIFE = "life_expectancy_years.csv"
 
+
 def main():
     """
     Loads data for Gross National Product (GNP) per capita
@@ -28,7 +29,7 @@ def main():
 
     plt.figure(figsize=(10, 6))
     plt.scatter(gnp_year, life_expectancy_year)
-    plt.title(f"Life expectancy vs Gross domestic product (Year {YEAR_COLUMN})")
+    plt.title(f"Life expectancy vs Gross domestic product(Year {YEAR_COLUMN})")
     plt.xlabel("Gross domestic product")
     plt.ylabel("Life expectancy (Years)")
     plt.xscale("log")
