@@ -46,12 +46,7 @@ def ft_blue(array: np.ndarray) -> np.ndarray:
 
 def ft_grey(array: np.ndarray) -> np.ndarray:
     """
-    Converts the image to grayscale using the luminosity method:
-    0.299 * R + 0.587 * G + 0.114 * B
+    Converts the image to grayscale by averaging the RGB channels.
     """
-    grey = (
-        0.299 * array[:, :, 0] +
-        0.587 * array[:, :, 1] +
-        0.114 * array[:, :, 2]
-    ).astype(np.uint8)
-    return grey
+    image = np.mean(array, axis=2, keepdims=True).astype(array.dtype)
+    return np.repeat(image, 3, axis=2)
