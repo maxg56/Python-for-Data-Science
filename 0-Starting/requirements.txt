@@ -9,4 +9,4 @@ requests==2.32.4
 setuptools==80.8.0
 tqdm==4.67.1
 urllib3==2.6.3
-wheel==0.45.1
+wheel==0.46.2
