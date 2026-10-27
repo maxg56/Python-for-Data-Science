@@ -1,7 +1,7 @@
 build==1.2.2.post1
 certifi==2026.10.18
 charset-normalizer==3.4.2
-idna==3.10
+idna==3.15
 numpy==2.2.6
 packaging==25.0
 pyproject_hooks==1.2.0
